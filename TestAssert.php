@@ -1,6 +1,6 @@
 <?php
 /**
- * A simple assertion class providing basic testing functionality similar to PHPUnit
+ * A simple, lightweight assertion class providing basic testing functionality similar to PHPUnit
  */
 class TestAssert
 {
@@ -13,7 +13,7 @@ class TestAssert
      */
     public static function assertTrue($condition, $message): bool
     {
-        if ($condition) {
+        if ($condition === true) {
             echo "✅ TEST PASS: $message\n";
             return true;
         } else {
@@ -31,7 +31,7 @@ class TestAssert
      */
     public static function assertFalse($condition, $message): bool
     {
-        if (!$condition) {
+        if ($condition === false) {
             echo "✅ TEST PASS: $message\n";
             return true;
         } else {
@@ -125,7 +125,7 @@ class TestAssert
     public static function assertStringContains($needle, $haystack, $message): bool
     {
         $position = strpos($haystack, $needle);
-
+        
         if ($position !== false) {
             echo "✅ TEST PASS: $message\n";
             return true;
@@ -158,7 +158,7 @@ class TestAssert
         }
 
         echo sprintf(
-            "❌ TEST FAIL: %s (Expected to find: '%s', In: '%s')\n",
+            "❌ TEST FAIL: %s (Found: '%s', In: '%s')\n",
             $message,
             addslashes($needle),
             addslashes($haystack)
