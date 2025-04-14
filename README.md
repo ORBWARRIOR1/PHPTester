@@ -1,8 +1,8 @@
-# TestAssert - Lightweight PHP Testing Library
+# PocketTestPHP - Lightweight PHP Testing Library
 
 ![PHP](https://img.shields.io/badge/PHP-%3E%3D7.0-blue)
 
-TestAssert is a minimal, dependency-free PHP testing library that provides basic assertion functionality similar to PHPUnit, but with a much smaller footprint.
+PocketTestPHP is a minimal, dependency-free PHP testing library that provides basic assertion functionality similar to PHPUnit, but with a much smaller footprint.
 
 ## Features
 
@@ -16,10 +16,10 @@ TestAssert is a minimal, dependency-free PHP testing library that provides basic
 
 ## Installation
 
-Simply include the `TestAssert.php` file in your project:
+Simply include the `PocketTestPHP.php` file in your project:
 
 ```php
-require_once 'path/to/TestAssert.php';
+require_once 'path/to/PocketTestPHP.php';
 ```
 
 ## Roadmap
@@ -31,7 +31,7 @@ require_once 'path/to/TestAssert.php';
 - Numeric comparisons
 - Exception testing
 
-## Why Use TestAssert Instead of PHPUnit?
+## Why Use PocketTestPHP Instead of PHPUnit?
 
 - **Lightweight**: Just one file with no dependencies
 - **Simple**: No complex configuration needed
