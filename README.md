@@ -29,7 +29,7 @@ require_once 'path/to/PocketTestPHP.php';
 - Array assertions
 - Type checking
 - Numeric comparisons
-- Exception testing
+- Runner class (can handle different file naming conventions)
 
 ## Why Use PocketTestPHP Instead of PHPUnit?
 
